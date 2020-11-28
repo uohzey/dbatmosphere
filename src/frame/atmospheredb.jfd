@@ -1,0 +1,136 @@
+JFDML JFormDesigner: "6.0.6.2.195" Java: "11.0.8" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.CardLayout ) ) {
+			name: "this"
+			"$sizePolicy": 1
+			"title": "大气数据库系统"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_query"
+					"text": "查询"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 555
+					"y": 80
+					"height": 30
+					"width": 90
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 550
+					"y": 30
+					"width": 95
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 445
+					"y": 30
+					"width": 95
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cobFeature"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "date"
+						addElement( "date" )
+						addElement( "time" )
+						addElement( "AOD400" )
+						addElement( "AOD500" )
+						addElement( "AOD550" )
+						addElement( "AOD675" )
+						addElement( "AOD870" )
+						addElement( "AOD940" )
+						addElement( "AOD1020" )
+						addElement( "AOD1627" )
+						addElement( "AOD2200" )
+						addElement( "PWV" )
+						addElement( "arfa" )
+						addElement( "beta" )
+					}
+					"selectedIndex": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 170
+					"y": 25
+					"width": 125
+					"height": 40
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "table"
+						"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector, new java.util.Vector, new java.util.Vector, new java.util.Vector )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 35
+					"y": 125
+					"width": 625
+					"height": 220
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_paint"
+					"text": "绘图"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 600
+					"y": 365
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cobCity"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "青岛AOD"
+						addElement( "青岛AOD" )
+						addElement( "青岛OPC" )
+						addElement( "三沙TURB" )
+						addElement( "三沙VIS" )
+						addElement( "三沙WS" )
+					}
+					"selectedIndex": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 125
+					"height": 40
+					"x": 40
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cobFrequency"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "1 min"
+						addElement( "1 min" )
+						addElement( "1 hour" )
+						addElement( "1 day" )
+						addElement( "1 week" )
+						addElement( "1 month" )
+						addElement( "1 year" )
+					}
+					"selectedIndex": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 125
+					"height": 40
+					"x": 305
+					"y": 25
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "card1"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "设置"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "退出"
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 30, 20 )
+			"size": new java.awt.Dimension( 760, 535 )
+		} )
+	}
+}

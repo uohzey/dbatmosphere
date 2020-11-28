@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: frame.LoginFrame
+Class-Path: commons-codec-1.6.jar beautyeye_lnf.jar mssql-jdbc-8.4.1.jre
+ 8.jar jfreechart-1.0.13.jar mysql_connector_java_5.1.36_bin.jar jcommon
+ -1.0.16.jar gnujaxp.jar
+
